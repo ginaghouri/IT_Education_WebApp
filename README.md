@@ -1,4 +1,4 @@
-# CFGWebApp: 
+# CFG Web App: 
 https://codepen.io/Guru-GanaSaki/pen/mdaMKbQ?editors=0110
 
 CFG Degree
