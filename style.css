@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1
+.Banner {
+    background-color: pink;
+    padding: 1rem;
+}
+
+.Dice {
+    border: 2px purple solid;
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.stop {
+  animation: none;
+}
+
+.rotate {
+  animation: roll;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes roll {
+  0% {
+    color: black;
+    background-color: white;
+    transform: rotate(0deg) scale(1.0); 
+  }
+  50% {
+    width: 15px;
+    color: white;
+    background-color: black;
+    transform: rotate(360deg) scale(3.0);
+  }
+  100% { 
+    color: black;
+    background-color: white;
+    transform: rotate(720deg) scale(1.0);
+  }
+}
+
+#specialisations {
+  visibility: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    color: #333;
+}
+
+.specialisation-selector {
+    margin: 20px;
+}
+
+.specialisation-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #800080;
+    color: #D8BFD8;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Add styles for the pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CFGWebApp</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<body>
+  <h1 class="Banner">CFG Degree</h1>
+  
+  <div id="message">Code First Girls👩‍💻 </div>
+  
+  <div class="Dice">
+    <p id="Output">...</p>
+  </div>
+  
+  <button id="Roll">Click</button>
+  <h2>Specialisations:</h2>
+
+  <ol id="specialisations">
+    <li>Software Engineering  👩‍🦱 </li>
+    <li>Full-Stack Developer 👸 </li>
+    <li>Data Career Pathway 👩‍🦰 </li>
+    <li>Product Management 👱‍♀️ </li>
+  </ol>
+
+  <h3> Select Your CFG Degree Track </h3>
+  <div class="specialisation-selector">
+    <label for="specialisation">Choose a Specialisation:</label>
+    <select id="specialisation">
+      <option value="software">Software</option>
+      <option value="fullstack">Full Stack</option>
+      <option value="data">Data</option>
+      <option value="product">Product</option>
+    </select>
+    <button id="us-button" onclick="updateSpecialisation()">Submit</button>
+  </div>
+  <div class="specialisation-info">
+    <p id="specialisation-text">Please select a specialisation to learn more.</p>
+  </div>
+
+
+  <!-- Add a button for the user to input their name -->
+  <button onclick="showNamePopup()">Enter Your Name</button>
+
+  <!-- Add a hidden div for the pop-up -->
+  <div id="namePopup" class="popup">
+      <div class="popup-content">
+          <span onclick="closeNamePopup()" class="close-button">&times;</span>
+          <h3>What is your name?</h3>
+          <input type="text" id="userNameInput">
+          <button onclick="submitName()">Submit</button>
+      </div>
+  </div>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
